@@ -1,0 +1,253 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"WebIntent\"><param name=\"android-package\" value=\"com.borismus.webintent.WebIntent\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Launcher\"><param name=\"android-package\" value=\"com.hutchind.cordova.plugins.launcher.Launcher\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StreamingMedia\"><param name=\"android-package\" value=\"com.hutchind.cordova.plugins.streamingmedia.StreamingMedia\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SimpleVideoPlayer\"><param name=\"android-package\" value=\"com.irdev.cordova.simplevideoplayer.SimpleVideoPlayer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"startApp\"><param name=\"android-package\" value=\"com.lampa.startapp.startApp\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"VideoPlayer\"><param name=\"android-package\" value=\"com.moust.cordova.videoplayer.VideoPlayer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"WifiWizard\"><param name=\"android-package\" value=\"com.pylonproducts.wifiwizard.WifiWizard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CorHttpd\"><param name=\"android-package\" value=\"com.rjfun.cordova.httpd.CorHttpd\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"networkinterface\"><param name=\"android-package\" value=\"com.albahra.plugin.networkinterface.networkinterface\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Toast\"><param name=\"android-package\" value=\"nl.xservices.plugins.Toast\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AppInstaller\"><param name=\"android-package\" value=\"fr.smile.mobile.appinstaller.CDVAppInstaller\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"UniqueDeviceID\"><param name=\"android-package\" value=\"hu.dpal.phonegap.plugins.UniqueDeviceID\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InstalledApps\"><param name=\"android-package\" value=\"info.quatinus.cordova.plugin.InstalledApps\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BackgroundDownload\"><param name=\"android-package\" value=\"org.apache.cordova.backgroundDownload.BackgroundDownload\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Media\"><param name=\"android-package\" value=\"org.apache.cordova.media.AudioHandler\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AndroidFullScreen\"><param name=\"android-package\" value=\"com.mesmotronic.plugins.FullScreenPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|screenSize\" android:label=\"Simple Audio Stream\" android:name=\"com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|screenSize\" android:label=\"Simple Video Stream\" android:name=\"com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 4
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RESTART_PACKAGES\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*/application": [
+                        {
+                            "xml": "<activity android:configChanges=\"keyboardHidden|orientation|screenSize\" android:name=\"com.irdev.cordova.simplevideoplayer.SimpleVideoPlayerActivity\" android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.borismus.webintent": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "com.hutchind.cordova.plugins.launcher": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "com.hutchind.cordova.plugins.streamingmedia": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "com.irdev.cordova.simplevideoplayer": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "com.lampa.startapp": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "com.moust.cordova.videoplayer": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "com.pylonproducts.wifiwizard": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "com.rjfun.cordova.httpd": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "cordova-plugin-networkinterface": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "fr.smile.mobile.appinstaller": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "hu.dpal.phonegap.plugins.UniqueDeviceID": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "info.quatinus.cordova.plugin.installedApps": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "org.apache.cordova.background-download": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "cordova-plugin-fullscreen": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        }
+    },
+    "dependent_plugins": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "bc.ptcontent"
+        }
+    }
+}

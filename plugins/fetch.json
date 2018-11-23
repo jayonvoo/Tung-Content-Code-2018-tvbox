@@ -1,0 +1,226 @@
+{
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.inappbrowser"
+        }
+    },
+    "org.apache.cordova.media": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.media"
+        }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        }
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.dialogs"
+        }
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        }
+    },
+    "org.apache.cordova.file": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file"
+        }
+    },
+    "com.hutchind.cordova.plugins.launcher": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nchutchind/App-Launcher-Cordova-Plugin.git",
+            "subdir": "."
+        }
+    },
+    "hu.dpal.phonegap.plugins.UniqueDeviceID": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Paldom/UniqueDeviceID.git",
+            "subdir": "."
+        }
+    },
+    "com.vliesaputra.deviceinformation": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vliesaputra/DeviceInformationPlugin.git",
+            "subdir": "."
+        }
+    },
+    "com.danielluxemburg.cordova.manufacturer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dluxemburg/cordova-plugin-manufacturer.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-whitelist.git",
+            "subdir": "."
+        }
+    },
+    "com.borismus.webintent": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Initsogar/cordova-webintent.git",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.background-download": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sgrebnov/cordova-plugin-background-download.git",
+            "subdir": "."
+        }
+    },
+    "com.hutchind.cordova.plugins.streamingmedia": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nchutchind/Streaming-Media-Cordova-Plugin.git",
+            "subdir": "."
+        }
+    },
+    "com.moust.cordova.videoplayer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/moust/cordova-plugin-videoplayer.git",
+            "subdir": "."
+        }
+    },
+    "com.plidstone.phonegap.plugins.video-thumbnail": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ednasgoldfishuk/VideoThumbnail.git",
+            "subdir": "."
+        }
+    },
+    "com.phonegap.plugins.video": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/macdonst/VideoPlayer.git",
+            "subdir": "."
+        }
+    },
+    "com.dawsonloudon.videoplayer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dawsonloudon/VideoPlayer.git",
+            "subdir": "."
+        }
+    },
+    "com.irdev.cordova.simplevideoplayer": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ivorocha90/cordova-simple-video-player.git",
+            "subdir": "."
+        }
+    },
+    "fr.smile.mobile.appinstaller": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/simbas/cordova-plugin-app-installer.git",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.file-transfer": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file-transfer"
+        }
+    },
+    "org.apache.cordova.plugins.DownloadManager.DownloadManager": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Whebcraft/Downloader.git",
+            "subdir": "."
+        }
+    },
+    "de.fastr.phonegap.plugins.downloader": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fastrde/cordova-plugin-fastrde-downloader.git",
+            "subdir": "."
+        }
+    },
+    "jdev.cordova.thread": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/luuthehien1992/jdev.cordova.thread.git",
+            "subdir": "."
+        }
+    },
+    "com.pylonproducts.wifiwizard": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/parsonsmatt/WifiWizard.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-x-toast": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+            "subdir": "."
+        }
+    },
+    "com.lampa.startapp": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/lampaa/com.lampa.startapp.git",
+            "subdir": "."
+        }
+    },
+    "com.darktalker.cordova.screenshot": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/gitawego/cordova-screenshot.git",
+            "subdir": "."
+        }
+    },
+    "com.rjfun.cordova.httpd": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/floatinghotpot/cordova-httpd.git",
+            "subdir": "."
+        }
+    },
+    "info.quatinus.cordova.plugin.installedApps": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/KIvanow/installedApps.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-battery-status": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-battery-status.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-networkinterface": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/salbahra/cordova-plugin-networkinterface.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-fullscreen": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mesmotronic/cordova-plugin-fullscreen",
+            "subdir": "."
+        }
+    }
+}

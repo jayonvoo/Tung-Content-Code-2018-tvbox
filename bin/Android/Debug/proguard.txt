@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:6
+-keep class bc.ptcontent.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:12
+-keep class com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.irdev.cordova.simplevideoplayer.SimpleVideoPlayerActivity { <init>(...); }
+
