@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>PTContent</title>
+    <!-- PTContent 參考 -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+    <style type="text/css">
+        html, body {
+            width: 1280px;
+            height: 672px;
+            left: 0px;
+            overflow: hidden;
+            top: 0px;
+        }
+
+        #LeftBlock {
+            z-index: 1;
+            left: 4px;
+            top: 18px;
+            position: absolute;
+            height: 300px;
+            width: 410px;
+        }
+
+        #AreaB {
+            z-index: 1;
+            left: 5px;
+            top: 318px;
+            position: absolute;
+            width: 1280px;
+            height: 300px;
+        }
+
+        #ADBlock {
+            z-index: 1;
+            left: 415px;
+            top: 15px;
+            position: absolute;
+            height: 300px;
+            width: 713px;
+        }
+
+            #ADBlock:focus {
+                border-style: solid;
+                border-width: 4px;
+                border-color: #EE7700;
+            }
+
+        #TextShow {
+            width: 1280px;
+            height: 65px;
+            z-index: 1000;
+            left: 0px;
+            top: 650px;
+            position: absolute;
+            /*background-color: dodgerblue;*/
+            background-color: #84CCC9;
+            color: #0010E4;
+            vertical-align: middle;
+            padding-top: 5px;
+        }
+
+            #TextShow a {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+
+        .TableCell {
+            width: 140px;
+            height: 103px;
+            text-align: center;
+            color: black;
+        }
+
+            .TableCell:focus {
+                border-style: solid;
+                border-width: 4px;
+                border-color: #EE7700;
+            }
+
+        .TableCellBig {
+            width: 138px;
+            height: 100px;
+            text-align: center;
+            color: black;
+        }
+
+            .TableCellBig:focus {
+                border-style: solid;
+                border-width: 4px;
+                border-color: #EE7700;
+            }
+
+        .Icon {
+            height: 107px;
+            width: 120px;
+        }
+
+        .ImportantColor {
+            color: red;
+        }
+
+        .NormalColor1 {
+            /*color: dodgerblue;*/
+            color: #455F90;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .NormalColor {
+            color: dodgerblue;
+            font-size: 16px;
+        }
+
+        #PatientName {
+            z-index: 1;
+            left: 72px;
+            top: 205px;
+            position: absolute;
+            color: #0061b4;
+            font-size: 26px;
+        }
+
+
+        #DoctorName {
+            z-index: 1;
+            left: 235px;
+            top: 256px;
+            position: absolute;
+            color: #0061b4;
+            font-size: 26px;
+        }
+
+
+        #NurseName {
+            z-index: 1;
+            left: 235px;
+            top: 207px;
+            position: absolute;
+            color: #0061b4;
+            font-size: 26px;
+        }
+
+
+        #PayState {
+            z-index: 1;
+            left: 72px;
+            top: 259px;
+            position: absolute;
+            color: #0061b4;
+            font-size: 26px;
+        }
+
+        #BedId {
+            z-index: 1;
+            left: 28px;
+            top: 97px;
+            position: absolute;
+            color: #1aa5d4;
+            font-size: 88px;
+            letter-spacing: 5px;
+            font-weight: 600;
+        }
+
+            #BedId:focus {
+                border-style: solid;
+                border-width: 4px;
+                border-color: #EE7700;
+            }
+
+
+        .marquee {
+            width: 100%;
+            font-size: 40px;
+            /*background-color: #1E90FF;*/
+            background-color: #84CCC9;
+            color: #0010E4;
+        }
+
+        .Modal {
+            width: 1280px;
+            height: 1980px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: gray;
+            opacity: 0.9;
+            z-index: 10000;
+        }
+
+        .PopupDialog {
+            position: absolute;
+            top: 60px;
+            left: 180px;
+            z-index: 10001;
+            width: 850px;
+            height: 550px;
+            opacity: 1;
+            background: url(images/Popup.png) no-repeat;
+            background-size: contain;
+            overflow-y: scroll;
+        }
+
+        .ModalSpan {
+            position: absolute;
+            top: 170px;
+            left: 332px;
+            z-index: 10002;
+            color: cornflowerblue;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .ModalStyle {
+            position: absolute;
+            top: 163px;
+            left: 334px;
+            z-index: 10002;
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .auto-style1 {
+            position: absolute;
+            top: 78px;
+            left: 240px;
+            z-index: 10002;
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        tr.spaceUnder > td {
+            padding-bottom: 0.7em;
+            padding-left: 1em;
+        }
+
+        .popupService {
+            height: 100px;
+            width: 100px;
+        }
+
+        .auto-style2 {
+            width: 95%;
+            height: 280px;
+            position: absolute;
+            top: 65px;
+            left: 25px;
+            z-index: 10003;
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div id="Modal" class="Modal">
+    </div>
+    <span id="ModalSpan" class="auto-style1">電視節目</span>
+    <div id="ModalImage" class="PopupDialog">
+        <table id="ApplicationTable" class="auto-style2">
+            <tr>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+
+            </tr>
+            <tr>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+
+            </tr>
+            <tr>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+                <td class="TableCellBig"></td>
+
+            </tr>
+        </table>
+    </div>
+
+    <script src="scripts/jquery-1.4.3.min.js"></script>
+    <script src="scripts/jquery.marquee.min.js"></script>
+    <script src="scripts/jquery.blockUI.js"></script>
+    <script src="scripts/beaverslider.js"></script>
+    <script src="scripts/beaverslider-effects.js"></script>
+    <script src="scripts/iscroll.js"></script>
+    <!-- Cordova 參考，建置後會加入您的應用程式。 -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <p>
+        <img id="LeftBlock" style="width: 27%;" alt="" src="images/UIBlock.png" />
+    </p>
+
+    <!--<div id="ADLayer" style="margin-left:410px;margin-top:-25px;">-->
+    <img id="ADBlock" alt="" src="images/ADBlock.png" style="left: 27.1%; width: 63.8%; height: 300px;" />
+    <!--</div>-->
+    <div style="left: 0; margin-right: 12px; margin-top: 288px; width: 91.0%; height: 357px; background-image: url('images/Content.png'); background-size: cover; position: absolute; top: 7px; z-index: 99;">
+        <div id="wrapper1" style="float: left; width: 530px; height:290px; overflow-y: scroll; top: 30px;
+            left: 38px;
+            position: absolute;">
+            <table id="LeftTable" class="TableStyle1">
+                <tr class="spaceUnder">
+                    <td class="TableCell">
+                        <img id="GameIcon1" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+                    <td class="TableCell">
+                        <img id="GameIcon2" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+                    <td class="TableCell">
+                        <img id="GameIcon3" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="TableCell">
+                        <img id="GameIcon4" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="GameIcon5" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="GameIcon6" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="TableCell">
+                        <img id="GameIcon7" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="GameIcon8" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="GameIcon9" class="Icon" alt="" src="images/Game.png" /><br />
+                        <span class="NormalColor">遊戲娛樂</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="wrapper2" style="float:right; width: 700px;height:290px;top: 30px;
+            left: 214px;
+            position: absolute;">
+            <table id="RightTable">
+                <tr class="spaceUnder">
+                    <td class="TableCell">
+                        <img id="CallIcon1" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+                    </td>
+                    <td class="TableCell">
+                        <img id="CallIcon2" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+                    </td>
+                    <td class="TableCell">
+                        <img id="CallIcon3" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="CallIcon4" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td class="TableCell">
+                        <img id="CallIcon5" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="CallIcon6" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+
+                    </td>
+
+
+                    <td class="TableCell">
+                        <img id="CallIcon7" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="TableCell">
+                        <img id="CallIcon8" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="CallIcon9" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+                    </td>
+
+                    <td class="TableCell">
+                        <img id="CallIcon10" class="Icon" alt="" src="images/Call.png" /><br />
+                        <span class="ImportantColor">呼叫服務</span>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <span id="PatientName">姓名區</span>
+    <span id="DoctorName">醫師區</span>
+    <span id="PayState">狀態區</span>
+    <span id="NurseName">主護區</span>
+    <span id="BedId">病房區</span>
+    <div id="TextShow" class="marquee"></div>
+
+</body>
+</html>

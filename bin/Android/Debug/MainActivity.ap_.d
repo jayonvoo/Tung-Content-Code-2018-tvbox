@@ -95,6 +95,7 @@ C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Buy.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Call.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Content.png \
+C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Content_old.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Game.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Guide.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Life.png \
@@ -106,6 +107,7 @@ C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Reg.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Security.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Service.png \
+C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\smart-home.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\Tung.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\TV.png \
 C:\Users\kiyot\Desktop\Tung-Content-Code-2018-tvbox\platforms\android\assets\www\images\UIBlock.png \

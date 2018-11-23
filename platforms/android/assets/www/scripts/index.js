@@ -97,7 +97,7 @@
     /*2018-03-05*/
     var currentClick = '';
 
-    
+
 
     //---------------------------------------------------------------------------------------------------------------
 
@@ -325,7 +325,7 @@
         GetHospitalData();
         installedApps.getPackages(GetInstallListSuccess, GetInstallListFail);
         BindApplication();
-        
+
         /* 2017-07-29 Testing Download APK And Install on Launcher */
         //PushDownloadFile("http://122.117.67.226:5388/Upload/sign5/2017-06-04-13-18-02.apk");
         //PushDownloadFile("http://122.117.67.226:5388/Upload/sign/2016-11-18-07-23-51.apk");
@@ -848,7 +848,7 @@
 
                     //2017-09-18
                     //call intro
-                    
+
                     if (window.localStorage.AccId) {
                         if (window.localStorage.AccId == accId) {
 
@@ -860,7 +860,7 @@
                         window.localStorage.AccId = accId;
                         window.plugins.launcher.launch({ packageName: 'com.example.xiang.intro' }, successCallback, errorCallback);
                     }
-                    
+
 
                     PatientBedId = pPatientBedId;
                     window.localStorage.BedId = pPatientBedId;
@@ -1254,7 +1254,7 @@
             }
         });
     }
-    
+
     //遙控器鍵盤點擊
     function keyFunction() {
         console.log("key Event = " + event.keyCode);
@@ -1371,7 +1371,7 @@
         });
     }
 
-    
+
 
     function GetExtName(pFile) {
         var extName = "";//副檔名
@@ -1386,6 +1386,9 @@
     }
 
     function BindIconItem(pArea) {
+
+        var testValue = "生活資訊$Life.png$3@辨識安全$Security.png$5@院內服務$Service.png$2@環境控制$smart-home.png$100";
+
         ClearTableContent();
         $.ajax({
             url: "http://122.117.67.226:5388/IconItemQuery.aspx",
@@ -1398,8 +1401,8 @@
                         CustomAlert("無法從院方Server取得IconItem");
                     }
                 } else {
-                    var ItemData = response.split("@");
-                    for (var i = 0; i < ItemData.length - 1; i++) {
+                    var ItemData = testValue.split("@");
+                    for (var i = 0; i < ItemData.length; i++) {
                         var CategoryName = ItemData[i].split("$")[0];
                         var CategoryImage = ItemData[i].split("$")[1];
                         var CategoryId = ItemData[i].split("$")[2];
@@ -1462,7 +1465,8 @@
                             }
                             $("#RightTable td").each(function (index) {
                                 if ($(this).html().trim() == '') {
-                                    var newImg = "<img id='" + CategoryImage + "' src='http://122.117.67.226:5388/CategoryImage" + "/" + CategoryImage + "' class='Icon' /><br/>";
+                                    //var newImg = "<img id='" + CategoryImage + "' src='http://122.117.67.226:5388/CategoryImage" + "/" + CategoryImage + "' class='Icon' /><br/>";
+                                    var newImg = "<img id='" + CategoryImage + "' src='images" + "/" + CategoryImage + "' class='Icon' /><br/>";
                                     var newSpan = "<span class='NormalColor1' >" + CategoryName + "</>";
                                     $(this).append(newImg);
                                     $(this).append(newSpan);
@@ -1838,25 +1842,33 @@
     }
 
     function GetAppCategoryCount(pCategory) {
-        var rCount = 0;
-        for (var j = 0; j < ApplicationData.length; j++) {
-            if (ApplicationData[j].split(",")[3] == pCategory) {
-                rCount++;
+        if (pCategory != 100) {
+            var rCount = 0;
+            for (var j = 0; j < ApplicationData.length; j++) {
+                if (ApplicationData[j].split(",")[3] == pCategory) {
+                    rCount++;
+                }
             }
+            return rCount;
+        } else if (pCategory == 100) {
+            return 1;
         }
-        return rCount;
     }
 
     function GetAppCategoryOnly(pCategory) {
-        var rPackageName = "";
+        if (pCategory != 100) {
+            var rPackageName = "";
 
-        for (var j = 0; j < ApplicationData.length; j++) {
-            if (ApplicationData[j].split(",")[3] == pCategory) {
-                rPackageName = ApplicationData[j].split(",")[2];
-                break;
+            for (var j = 0; j < ApplicationData.length; j++) {
+                if (ApplicationData[j].split(",")[3] == pCategory) {
+                    rPackageName = ApplicationData[j].split(",")[2];
+                    break;
+                }
             }
+            return rPackageName;
+        } else if (pCategory == 100) {
+            return "com.example.user.tung_environmental_control_2121_44";
         }
-        return rPackageName;
     }
 
     function ClearTD() {
@@ -2009,7 +2021,7 @@
         if (ApplicationData.length > 0) {
 
             if (CheckPackageNameIsEnable(pPackage) == true) {
-
+                //com.example.user.tung_environmental_control_2121_44 #環境控制
                 //2018-03-05
                 SendClickData(pPackage);
 
@@ -2047,6 +2059,8 @@
                     window.plugins.launcher.launch({ packageName: pPackage }, successCallback, errorCallback);
                 }
 
+            } else if (pPackage == "com.example.user.tung_environmental_control_2121_44") {
+                window.plugins.launcher.launch({ packageName: pPackage }, successCallback, errorCallback);
             } else {
                 if (alertIsShow == false) {
                     CustomAlert("程式尚未啟用，請洽服務人員...");
