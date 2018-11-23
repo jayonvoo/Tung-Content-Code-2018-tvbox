@@ -2,10 +2,10 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
     <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
-    <AndroidEmulatorID>AndroidDevice;裝置</AndroidEmulatorID>
+    <AndroidEmulatorID>AndroidDevice;Device</AndroidEmulatorID>
   </PropertyGroup>
   <PropertyGroup>
-    <ReferenceCachePath>C:\Users\Denny\AppData\Local\Temp\xt5qfbjo_PTContent_refcache</ReferenceCachePath>
+    <ReferenceCachePath>C:\Users\kiyot\AppData\Local\Temp\PTContent_refcache</ReferenceCachePath>
     <ToolsVersionPromptShown>1.8</ToolsVersionPromptShown>
     <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>

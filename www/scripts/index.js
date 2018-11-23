@@ -318,7 +318,7 @@
             e.preventDefault();
         }, false);
 
-        BindIconItem(1);
+        //BindIconItem(1);
         BindIconItem(2);
 
         GetDeviceInfo();/** 裝置Id功能 */
